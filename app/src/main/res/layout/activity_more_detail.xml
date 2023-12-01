@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreDetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdetails"
+        android:text="Details"
+        android:textSize="36sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/lavender"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtdetails"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Beginner :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="The inclusion of a beginner category is excellent as it caters to individuals who are new to exercise or have limited experience. This category should focus on providing simple, easy-to-follow exercises that gradually introduce users to physical activity. The exercises should be suitable for individuals with varying fitness levels and ensure proper form and technique. It's important to emphasize proper warm-up and cool-down routines as well. Additionally, including modifications or alternative exercises for those with physical limitations or injuries would be beneficial. The beginner category sets a solid foundation for users to build their fitness levels and gain confidence in their abilities."
+                android:textColor="@color/lavender"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Intermediate :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="The advanced category caters to individuals who have a high level of fitness and are seeking more intense and challenging exercises. This category should include advanced strength training exercises, high-intensity interval training (HIIT) workouts, complex movements, and advanced flexibility routines. It's crucial to provide detailed instructions and safety precautions to prevent injuries, as the exercises in this category can be physically demanding. Offering variations or progressions for each exercise can cater to users with different fitness levels within the advanced category. Additionally, including advanced training techniques or strategies (e.g., supersets, drop sets) can further enhance the effectiveness of the workouts."
+                android:textColor="@color/lavender"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Advance :"
+                android:textColor="@color/lavender"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="The advanced category caters to individuals who have a high level of fitness and are seeking more intense and challenging exercises. This category should include advanced strength training exercises, high-intensity interval training (HIIT) workouts, complex movements, and advanced flexibility routines. It's crucial to provide detailed instructions and safety precautions to prevent injuries, as the exercises in this category can be physically demanding. Offering variations or progressions for each exercise can cater to users with different fitness levels within the advanced category. Additionally, including advanced training techniques or strategies (e.g., supersets, drop sets) can further enhance the effectiveness of the workouts."
+                android:textColor="@color/lavender"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
