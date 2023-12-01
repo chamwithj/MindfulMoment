@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mindfulness.mindfulmoment"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/meditation"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MindfulMomentLogin"
+        tools:targetApi="31">
+        <activity
+            android:name="com.mindfulness.mindfulmoment.MoreDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.BenefitActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.WorkOutActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.WorkoutActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.AnxiousActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.StressedActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.FeelingSadActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.FeelingGoodActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.TodoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.VideoPlayer"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCROJTK9ZXxnM77yOMxjwQYpO01h1bNjZQ" />
+
+        <activity
+            android:name="com.mindfulness.mindfulmoment.MapsActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_maps2" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.IntermediateExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.IntermediateMeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.AdvanceExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.BeginnerExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.StressActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.AdvanceMeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.BeginnerMeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.MusicActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.StressActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.ExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.BreathingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mindfulness.mindfulmoment.MeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mindfulness.mindfulmoment.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
