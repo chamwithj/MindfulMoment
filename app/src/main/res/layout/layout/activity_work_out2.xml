@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkOutActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/amazonName"
+            android:layout_width="191dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Let's go!!"
+            android:textColor="@color/lavender"
+            android:textSize="23sp"
+            app:layout_constraintEnd_toStartOf="@+id/amazonImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/amazonDesc"
+            android:text="A fit body, a calm mind equal house full of love."
+            android:textSize="12sp"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/lavender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amazonName"
+            app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/amazonImage"
+            app:lottie_autoPlay="true"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            app:lottie_rawRes="@raw/headerworkout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="5dp"
+            app:lottie_loop="true"
+            app:layout_constraintStart_toEndOf="@id/amazonName"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amazonImage">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/clothingCard"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/clothingName"
+                        android:text="Jumping jack for 1 minute"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/elecImage"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/elecImage"
+                        app:lottie_autoPlay="true"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/jumping_jack"
+                        app:lottie_loop="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/exerciseCard"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/homename"
+                        android:text="Frog press for 1 minute"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/homeImage"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/homeImage"
+                        app:lottie_autoPlay="true"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/frog_press"
+                        app:lottie_loop="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row3"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/stressCard"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pharaname"
+                        android:text="Punches for 1 minute"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/pharaImage"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/pharaImage"
+                        app:lottie_autoPlay="true"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/punches"
+                        app:lottie_loop="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row4"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/helloCard"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/helloname"
+                        android:text="Burpee and jump for 1 minute"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/helloImage"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/helloImage"
+                        app:lottie_autoPlay="true"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/burpee_and_jump"
+                        app:lottie_loop="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row5"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Card1"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exercisename"
+                        android:text="Push up X10"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/exerciseImage"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/exerciseImage"
+                        app:lottie_autoPlay="true"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/push_up"
+                        app:lottie_loop="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:id="@+id/row6"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row5">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/Card2"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/squatereach"
+                        android:text="cobras X10"
+                        android:textSize="20sp"
+                        android:textColor="@color/lavender"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/squateReachImage"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/squateReachImage"
+                        app:lottie_autoPlay="true"
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/cobras"
+                        app:lottie_loop="true"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
